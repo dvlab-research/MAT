@@ -78,15 +78,15 @@ Description of arguments:
 - data: training data
 - data\_val: validation data
 - dataloader: you can define your own dataloader
-- mirror: flip the image or not
+- mirror: use flip augmentation or not 
 - cond: use class info, default: false
 - cfg: configuration, find more details in 'train.py'
-- aug: whether to use augmentation of style-gan-ada, default: false
+- aug: use augmentation of style-gan-ada or not, default: false
 - generator: you can define your own generator
 - discriminator: you can define your own discriminator
 - loss: you can define your own loss
 - pr: ratio of perceptual loss
-- pl: whether to use path length regularization, default: false
+- pl: use path length regularization or not, default: false
 - truncation: truncation ratio proposed in stylegan
 - style\_mix: style mixing ratio proposed in stylegan
 - ema: exponoential moving averate, ~K samples
