@@ -114,7 +114,7 @@ def generate_images(
                 image = np.array(PIL.Image.open(f))
         if image.ndim == 2:
             image = image[:, :, np.newaxis] # HW => HWC
-            image = np.concatenate([image, image, image], axis=2)
+            image = np.repeat(image, 3, axis=2)
         image = image.transpose(2, 0, 1) # HWC => CHW
         image = image[:3]
         return image
@@ -139,7 +139,7 @@ def generate_images(
                 mask = cv2.imread(mask_list[i], cv2.IMREAD_GRAYSCALE).astype(np.float32) / 255.0
                 mask = torch.from_numpy(mask).float().to(device).unsqueeze(0).unsqueeze(0)
             else:
-                mask = RandomMask(resolution) # adjust the masking ratio by 'hole_range'
+                mask = RandomMask(resolution) # adjust the masking ratio by using 'hole_range'
                 mask = torch.from_numpy(mask).float().to(device).unsqueeze(0)
 
             z = torch.from_numpy(np.random.randn(1, G.z_dim)).to(device)

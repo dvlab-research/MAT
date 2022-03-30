@@ -2,12 +2,12 @@
 
 #### Wenbo Li, Zhe Lin, Kun Zhou, Lu Qi, Yi Wang, Jiaya Jia
 
-#### [\[Paper\]](https://github.com/dvlab-research/MAT)
+#### [\[Paper\]](https://arxiv.org/abs/2203.15270)
 ---
 
 ## News
 
-The training and testing code is released. We also provide masks and inpainted results of CelebA-HQ-val and Places-val [here](https://github.com/dvlab-research/MAT).
+The training and testing code is released. We also provide our masks for CelebA-HQ-val and Places-val [here](thu://mycuhk-my.sharepoint.com/:f:/g/personal/1155137927_link_cuhk_edu_hk/EuY30ziF-G5BvwziuHNFzDkBVC6KBPRg69kCeHIu-BXORA?e=7OwJyE).
 
 ---
 
@@ -28,7 +28,7 @@ The training and testing code is released. We also provide masks and inpainted r
 
 ## Quick Test
 
-1. We provide models trained on CelebA-HQ and Places365-Standard at 512x512 resolution. Download models from [One Drive]() and put them into the 'pretrained' directory.
+1. We provide models trained on CelebA-HQ and Places365-Standard at 512x512 resolution. Download models from [One Drive](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155137927_link_cuhk_edu_hk/EuY30ziF-G5BvwziuHNFzDkBVC6KBPRg69kCeHIu-BXORA?e=7OwJyE) and put them into the 'pretrained' directory. The released models are retrained, and hence the visualization results may slightly differ from the paper.
 
 2. Obtain inpainted results by running
     ```shell
@@ -94,9 +94,16 @@ Description of arguments:
 
 ## Evaluation
 
-Find evaluation scrtips for FID/U-IDS/P-IDS/LPIPS/PSNR/SSIM/L1 metrics in the 'evaluation' directory. Only need to give paths of your results and GTs. 
+We provide evaluation scrtips for FID/U-IDS/P-IDS/LPIPS/PSNR/SSIM/L1 metrics in the 'evaluation' directory. Only need to give paths of your results and GTs. 
 
 ## Citation
+
+    @inproceedings{li2022mat,
+        title={MAT: Mask-Aware Transformer for Large Hole Image Inpainting},
+        author={Li, Wenbo and Lin, Zhe and Zhou, Kun and Qi, Lu and Wang, Yi and Jia, Jiaya},
+        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+        year={2022}
+    }
 
 ## Acknowledgement
 Our code is bulit upon [StyleGAN2-ADA](https://github.com/NVlabs/stylegan2-ada-pytorch).
