@@ -7,6 +7,8 @@
 
 ## News
 
+For the code of the latest version, please find [here](https://github.com/fenglinglwb/MAT).
+
 The training and testing code is released. We also provide our masks for CelebA-HQ-val and Places-val [here](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155137927_link_cuhk_edu_hk/EuY30ziF-G5BvwziuHNFzDkBVC6KBPRg69kCeHIu-BXORA?e=7OwJyE).
 
 ---
